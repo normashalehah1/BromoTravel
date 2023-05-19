@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BromoTravel</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">BromoTraveling</div>
+
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#content">About Bromo</a></li>
+            <li><a href="#contact">Interest</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+
+          <div class="toggle_btn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </div>
+        </nav>
+
+        <div class="hero" id="hero">
+          <div class="left-hero">
+            <h1><span style="background-color: #c2baa6">Discover</span> the Beauty of <span style="color: #8b5f3d; background-color: #f5ecd7">Bromo</span></h1>
+            <p>Get ready for an incredible adventure that will take you to the pinnacle of Bromo's beauty. Prepare to be mesmerized by breathtaking landscapes and unforgettable moments that will fill your photo album.</p>
+
+            <a href="btn-active">Explore</a>
+          </div>
+
+          <div class="right-hero">
+            <img src="images/7.jpg" alt="" />
+            <div class="box-card">
+              <div class="box">
+                <p>01</p>
+                <h3>Tailored Itineraries</h3>
+                <p>we have specially crafted travel packages to cater to your preferences</p>
+              </div>
+              <div class="box">
+                <p>02</p>
+                <h3>Professional Photography</h3>
+                <p>Capture the magic of Bromo with our professional photography services</p>
+              </div>
+              <div class="box">
+                <p>03</p>
+                <h3>Cultural Immersion</h3>
+                <p>Cultural Immersion</p>
+              </div>
+              <div class="box">
+                <p>04</p>
+                <h3>Adventure Add-ons</h3>
+                <p>Take your adventure to the next level with our optional add-on activities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content" id="content">
+        <div class="col">
+          <div class="col-1">
+            <img src="images/1.jpg" alt="" />
+            <h1><span>Bromo</span> is the <span>best place</span> of <span style="background-color: #c2baa6; color: black">world</span></h1>
+          </div>
+          <div class="text">
+            <p>"Here at Bromo Travel, we understand your desire to explore the awe-inspiring wonders of nature."</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-1">
+            <img src="images/5.jpg" alt="" />
+            <div class="text">
+              <h1>"<span>Breathtaking</span> landscapes and <span>unforgettable</span> <span style="background-color: #c2baa6; color: black">moment</span>"</h1>
+              <p>we understand your desire to explore the awe-inspiring wonders of nature.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-1">
+            <img src="images/3.jpg" alt="" />
+            <div class="text">
+              <h2>Take your adventure to the next level with our optional add-on activities.</h2>
+              <p>From thrilling off-road jeep rides to horseback riding through stunning landscapes, we offer a range of exhilarating experiences to suit your adventurous spirit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="col">
+          <h1>Interest to join us?</h1>
+          <p>
+            Don't miss the chance to create unforgettable memories in Bromo! Discover these wonders with us and let the beauty of nature captivate you on the journey of a lifetime. Get ready to experience moments that will stay with you
+            forever!
+          </p>
+          <form action="">
+            <input type="text" placeholder="send your email.." />
+            <button>Get Started</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid-photos">
+          <img class="panjang" src="images/1.jpg" alt="" />
+          <img class="pendek" src="images/3.jpg" alt="" />
+          <img class="panjang" src="images/5.jpg" alt="" />
+          <img class="pendek" src="images/7.jpg" alt="" />
+
+          <img class="pendek" src="images/4.jpg" alt="" />
+          <img class="panjang" src="images/2.jpg" alt="" />
+          <img class="pendek" src="images/7.jpg" alt="" />
+          <img class="panjang" src="images/6.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created by <a href="https://github.com/normashalehah1" style="color: #4a797b">Norma Shalehah</a> May 18 2023</p>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn i");
+      const nav = document.querySelector("ul");
+
+      toggleBtn.addEventListener("click", function () {
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
